@@ -4,7 +4,9 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical
 
-# Check if GPU is available
+if torch.is_gpu_available():
+    print('GPU")
+
 gpus = tf.config.list_physical_devices('GPU')
 if gpus:
     print(f"GPU is available: {gpus}")
