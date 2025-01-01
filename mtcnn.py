@@ -9,7 +9,7 @@ from PIL import Image
 import glob
 
 margin = 0.1
-saveDest = 'D:/Autism-Data/Facebook/RawFaces/Autistic/'
+saveDest = 'D:/Mahesh/Facebook/RawFaces/Autistic/'
 count = len(glob.glob(saveDest+'*'))
 
 def draw_faces(filename, result_list):
